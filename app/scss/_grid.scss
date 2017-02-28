@@ -1,0 +1,143 @@
+// --------------------------------------------------------------------------------------
+// Flexy grid system
+// --------------------------------------------------------------------------------------
+
+// grid row
+.flex-wrap {
+
+  display: flex;
+
+  // wrap cells on mobile
+  @media screen and (max-width: $screen-medium - 1px) {
+    flex-wrap: wrap;
+  }
+
+  // grid cells
+  > * {
+    display: block;
+    max-width: 100%;
+    flex: 0 0 100%;
+    @media screen and (min-width: $screen-medium) {
+      // Overrides default "0 1 auto"
+      // Unitless flex-basis does not work in IE11, otherwise "1 1 auto" would be fine
+      flex: 1 1 0%;
+    }
+
+    // Overrides the default "0"
+    order: 1;
+
+    // Utility classes for source ordering
+    &.last {
+      order: 10;
+    }
+    &.first {
+      order: -10;
+    }
+
+    // Utility classes for alignment
+    &.top {
+      align-self: flex-start;
+    }
+    &.bottom {
+      align-self: flex-end;
+    }
+    &.middle {
+      align-self: center;
+    }
+
+  }
+
+  // vertical grid row
+  &.vertical {
+    flex-direction: column;
+  }
+
+  // grid row with spacing
+  &.spaced {
+    .flex-wrap {
+      margin-right: -$grid-spacing;
+      margin-left: -$grid-spacing;
+    }
+    //&:not(:last-of-type) {
+    //  margin-top: -20px;
+    //}
+    > * {
+      padding: $grid-spacing;
+    }
+  }
+
+  //reversed grid rows
+  &.reverse {
+    flex-direction: row-reverse;
+  }
+  &.vertical.reverse {
+    flex-direction: column-reverse;
+  }
+
+  // grid row with multiple lines
+  &.grid {
+    flex-wrap: wrap;
+  }
+
+  //centered grid row
+  &.center {
+    align-items: center;
+    align-content: center;
+  }
+
+  // Column sizes, disabled for mobile
+  @media screen and (min-width: $screen-medium) {
+
+    // block grids, add more if needed
+    &.items-2 > * {
+      max-width: 50%;
+      flex-basis: 50%;
+    }
+    &.items-3 > * {
+      max-width: 33.33333%;
+      flex-basis: 33.33333%;
+    }
+    &.items-4 > * {
+      max-width: 25%;
+      flex-basis: 25%;
+    }
+    &.items-5 > * {
+      max-width: 20%;
+      flex-basis: 20%;
+    }
+
+    // individual column sizes can be set manually, add more if needed
+    [class*='item-'] {
+      flex: none;
+    }
+    .item-1-3 {
+      width: 33.33333%;
+    }
+    .item-2-3 {
+      width: 66.66666%;
+    }
+    .item-1-4 {
+      width: 25%;
+    }
+    .item-1-2, .item-2-4 {
+      width: 50%;
+    }
+    .item-3-4 {
+      width: 75%;
+    }
+    .item-1-5 {
+      width: 20%;
+    }
+    .item-2-5 {
+      width: 40%;
+    }
+    .item-3-5 {
+      width: 60%;
+    }
+    .item-4-5 {
+      width: 80%;
+    }
+  }
+
+}
+

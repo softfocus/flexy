@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="Flexbox demo site for Vaasa Webdev Meetup ">
+    <title>Flexy</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div class="wrap" id="wrap">
+    <header class="site-header flex-wrap center" role="banner">
+        <div class="content flex-wrap vertical">
+            <h1 class="title">Flexbox Basics</h1>
+            <p>Practical flexbox examples for Vaasa WebDev Meetup</p>
+        </div>
+    </header>
+    <main role="main">
+        <article>
+            <div class="container">
+                <header>
+                    <h2 class="title main-title">Flexbox grid &amp; product cards</h2>
+                </header>
+                <section class="content demo-content">
+                    <div class="demo">
+                        <h3 class="title demo-title">Default settings: even columns, single row</h3>
+                        <div class="flex-wrap">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores aut
+                                    blanditiis
+                                    . A amet dicta et explicabo in magni
+                                    maiores natus temporibus veniam vero.</p>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum</p>
+                            </div>
+                            <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                                animi
+                                debitis
+                                deserunt enim et expedita explicabo in inventore minima nam necessitatibus!</p>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores aut
+                                    blanditiis
+                                    consectetur delectus facere necessitatibus omnis pariatur. A amet dicta et explicabo
+                                    in
+                                    magni
+                                    maiores natus temporibus veniam vero.</p>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum</p>
+                            </div>
+                            <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                                animi
+                                debitis
+                                deserunt enim et expedita explicabo in inventore minima nam necessitatibus!</p>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="demo">
+                        <h3 class="title demo-title">Individual column settings</h3>
+                        <div class="flex-wrap">
+                            <div class="item-1-2 middle">"item-1-2 middle"</div>
+                            <div class="last bottom ">"last bottom"</div>
+                            <div class="item-1-5">"item-1-5" Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.
+                                Dolor
+                                iure magni obcaecati quibusdam repudiandae tempore. Aut eum pariatur quam sit, totam
+                                veritatis!
+                            </div>
+                            <div>Div with remaining space</div>
+                        </div>
+                    </div>
+
+                    <div class="demo">
+                        <h3 class="title demo-title">Block grid of 4 items + spacing</h3>
+                        <div class="flex-wrap items-4 grid spaced">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores aut
+                                    blanditiis. A amet dicta et explicabo in magni maiores natus temporibus veniam
+                                    vero.</p>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum</p>
+                            </div>
+                            <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                                animi debitis deserunt enim et expedita explicabo in inventore minima nam
+                                necessitatibus!</p>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores aut
+                                    blanditiis consectetur delectus facere necessitatibus omnis pariatur. A amet dicta
+                                    et
+                                    explicabo
+                                    in magni maiores natus temporibus veniam vero.</p>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum</p>
+                            </div>
+                            <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                                animi debitis deserunt enim et expedita explicabo in inventore minima nam
+                                necessitatibus!</p>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section class="content card-content">
+                <h3 class="title demo-title">Product cards example</h3>
+                <div class="cards-wrap">
+                    <div class="card">
+                        <div class="inner">
+                            <div class="img"><img src="https://placehold.it/400x300')" alt="img"></div>
+                            <div class="content ">
+                                <h4 class="title">Lorem ipsum dolor sit amet</h4>
+                                <p>Lorem ipsum dolor sit amet, incidunt laboriosam magnam </p>
+                            </div>
+                            <a href="/" class="button link">Read more</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="inner">
+                            <div class="img"><img src="https://placehold.it/400x300')" alt="img"></div>
+                            <div class="content ">
+                                <h4 class="title">Dignissimos</h4>
+                                <p>Lorem ipsum dolor sit amet, incidunt laboriosam magnam </p>
+                            </div>
+                            <a href="/" class="button link">Read more</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="inner">
+                            <div class="img"><img src="https://placehold.it/400x300')" alt="img"></div>
+                            <div class="content ">
+                                <h4 class="title">Lorem ipsum dolor sit amet</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi assumenda at,
+                                    autem
+                                    dignissimos esse fugiat
+                                    nemo, nesciunt pariatur quidem repellendus tempore vitae.</p>
+                            </div>
+                            <a href="/" class="button link">Read more</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="inner">
+                            <div class="img"><img src="https://placehold.it/400x300')" alt="img"></div>
+                            <div class="content ">
+                                <h4 class="title">Lorem ipsum dolor sit amet</h4>
+                                <p>Lorem ipsum dolor sit amet, incidunt laboriosam magnam </p>
+                            </div>
+                            <a href="/" class="button link">Read more</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="inner">
+                            <div class="img"><img src="https://placehold.it/400x300')" alt="img"></div>
+                            <div class="content ">
+                                <h4 class="title">Lorem ipsum dolor sit amet</h4>
+                            </div>
+                            <a href="/" class="button link">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+</div>
+
+</body>
+</html>
