@@ -4,14 +4,14 @@
 
 html {
   box-sizing: border-box;
-  line-height:$line-height-base;
+  line-height: $line-height-base;
   color: $font-color-base;
   font-family: $font-family-base;
   font-weight: $font-weight-base;
+  overflow-y: scroll;
 }
 
 body {
-  overflow-y: scroll;
   min-width: 320px;
   font-size: $font-size-mobile;
   @media screen and (min-width: ($screen-medium)) {
@@ -25,7 +25,7 @@ body {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: $headings-font-family;
-  color:$headings-color;
+  color: $headings-color;
   letter-spacing: -.02em;
   line-height: 1.2;
   margin: 1em 0 .5em;
