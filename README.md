@@ -17,3 +17,13 @@ gulp
 FF, Chrome, IE Edge/11/10 (Windows 10)
 
 FF and Chrome (Android 7)
+
+### Needs improvement
+
+Responsive options (column sizes etc. for different breakpoints)
+
+Handling of nested spacings
+
+Extensive testing on mobile browsers and devices
+
+
