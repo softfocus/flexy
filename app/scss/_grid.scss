@@ -2,19 +2,23 @@
 // Flexy grid system
 // --------------------------------------------------------------------------------------
 
-// grid row
 .flex-wrap {
 
+  // Grid rows become flex containers
   display: flex;
 
-  // wrap cells on mobile
+  // multiple rows on mobile
   @media screen and (max-width: $screen-medium - 1px) {
     flex-wrap: wrap;
   }
 
   // grid cells
   > * {
+
+    // just in case
     display: block;
+
+    // Full width columns on mobile
     max-width: 100%;
     flex: 0 0 100%;
     @media screen and (min-width: $screen-medium) {
@@ -74,8 +78,8 @@
     flex-direction: column-reverse;
   }
 
-  // grid row with multiple lines
-  &.grid {
+  // grid with multiple rows
+  &.multirow {
     flex-wrap: wrap;
   }
 

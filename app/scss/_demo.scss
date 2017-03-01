@@ -53,5 +53,29 @@
     }
   }
 
+  .cards-wrap {
+    background: #374046;
+    .inner {
+      background: #fff;
+      .content {
+        text-align: center;
+        line-height: 1.33;
+        color: #888;
+        font-weight: 400;
+        font-size: .9em;
+      }
+      .title {
+        font-weight: 700;
+      }
+      .link {
+        color: #673ab7;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: .07em;
+      }
+    }
+  }
 }
 

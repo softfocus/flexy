@@ -9,7 +9,6 @@
     flex-wrap: wrap;
     max-width: 100%;
     padding: 6vw;
-    background: #374046;
 
     .card {
       display: flex;
@@ -30,29 +29,20 @@
         max-width: 25%;
         flex-basis: 25%;
       }
-
       .inner {
         max-width: 100%;
         display: flex;
         flex: 1 1 0%;
         flex-direction: column;
-        background: #fff;
         .content {
-          line-height: 1.33;
-          color: #888;
           max-width: 100%;
-          font-weight: 400;
           display: flex;
-          flex-wrap: wrap;
           flex-direction: column;
           flex: 1 1 auto;
-          text-align: center;
-          font-size: .9em;
-          padding: 0 3em;
-        }
-        .title {
-          margin-top: 1em;
-          font-weight: 700;
+          padding: 2em 3em;
+          p {
+            margin: 0;
+          }
         }
         .img {
           overflow: hidden;
@@ -61,21 +51,13 @@
             width: 100%;
           }
         }
+        .link {
+          white-space: nowrap;
+          display: inline-block;
+          margin-bottom: 2em;
+          text-align: center;
+        }
       }
     }
-
-    .link {
-      color: #673ab7;
-      text-transform: uppercase;
-      text-decoration: none;
-      font-weight: 700;
-      line-height: 1.1;
-      white-space: nowrap;
-      letter-spacing: .07em;
-      display: inline-block;
-      margin: 2em 1em;
-      text-align: center;
-    }
-
   }
 }
